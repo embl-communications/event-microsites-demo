@@ -1,39 +1,273 @@
-<html lang="en-us">
+<!DOCTYPE html>
+<html lang="en" class="vf-no-js">
+
 <head>
+  <script>
+    // Detect if JS is on and swap vf-no-js for vf-js on the html element
+    (function (H) {
+      H.className = H.className.replace(/\bvf-no-js\b/, 'vf-js')
+    })(document.documentElement);
+  </script>
+
+  <title>EMBO Practical Course - Molecular Geobiology 19-24 July 2020 | EMBL</title>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, minimum-scale=1" name="viewport">
+
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dev.beta.embl.org/guidelines/design/assets/embl-favicon/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dev.beta.embl.org/guidelines/design/assets/embl-favicon/assets//favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dev.beta.embl.org/guidelines/design/assets/embl-favicon/assets/favicon-16x16.png">
+  <link rel="manifest" href="https://dev.beta.embl.org/guidelines/design/assets/embl-favicon/assets/site.webmanifest">
+  <link rel="mask-icon"
+    href="https://dev.beta.embl.org/guidelines/design/assets/embl-favicon/assets/safari-pinned-tab.svg" color="#ffffff">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Content descriptors -->
+  <meta name="embl:who" content="Group Jane"> <!-- the people, groups and teams involved -->
+  <meta name="embl:where" content="Barcelona"> <!-- at which EMBL sites the content applies -->
+  <meta name="embl:what" content="research"> <!-- the activities covered -->
+  <meta name="embl:active" content="what"> <!-- which of the who/what/where is active -->
+
+  <!-- Content role -->
+  <meta name="embl:utility" content="-8"> <!-- if content is task and work based or if is meant to inspire -->
+  <meta name="embl:reach" content="-5">
+  <!-- if content is externally (public) or internally focused (those that work at EMBL) -->
+
+  <!-- Page infromation -->
+  <meta name="embl:maintainer" content=""> <!-- the contact person or group responsible for the page -->
+  <meta name="embl:last-review" content="NaN"> <!-- the last time the page was reviewed or updated -->
+  <meta name="embl:review-cycle" content=""> <!-- how long in days before the page should be checked -->
+  <meta name="embl:expiry" content=""> <!-- if there is a fixed point in time when the page is no longer relevant -->
+
+
+  <!-- CSS and JS -->
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" media="all"
+    href="https://dev.assets.emblstatic.net/embl-design-system/develop/css/styles.css" />
+
 </head>
+
 <body>
-<link href="style.css" rel="stylesheet">
-[[ef_header]]
-<div class="container ef-template-container">
-  <div class="jumbotron ef-banner">
-        [[ef_banner]]
-  </div>
-  <div class="jumbotron ef-banner">
-        [[ef_secondary_banner]]
-  </div>
-  <div class="row">
-    	<div class="col-sm-12">
-			[[ef_menu]]
-		</div>
-	</div>
-  <div class="row">
-      <div class="col-sm-12 ef-middle-column">
-    [[ef_main_progress]]
-    <h1>[[ef_main_header]]</h1>
-    [[ef_main_content]]
-    [[ef_main_buttons]]
+  <!-- EMBL Global header -->
+  <link rel="import"
+    href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=574&pattern=node-body&source=contenthub"
+    data-target="self" data-embl-js-content-hub-loader>
+
+
+  <div class="container ef-template-container">
+    <div class="jumbotron ef-banner">
+      <img src="https://www.embl.de/training/events/2020/GEO20-01/section_header.jpg" style="max-width: 100%" alt="Decorative image" />
+    </div>
+    <div class="jumbotron ef-banner">
+      [[ef_secondary_banner]]
+    </div>
+    <div class="vf-body">
+
+      <section class="vf-intro | embl-grid embl-grid--has-centered-content">
+        <div>
+          <!-- empty -->
+        </div>
+        <div>
+          <span class="vf-badge vf-badge--primary">EMBO Practical Course</span>
+          <h1 class="vf-intro__heading">Molecular Geobiology</h1>
+          <p class="vf-lede">This course will bring together early career researchers in the fields of geology, planetary science, micro- and molecular biology for an introduction to the interdisciplinary field of Geobiology.</p>
+          <p class="vf-intro__text">Participants will be introduced to a collaborative environment and the course will facilitate interaction between researchers in multiple fields who would otherwise have a limited opportunity to exchange ideas.</p>
+          <p class="">
+            <a href="https://embl.ungerboeck.com/prod/emc00/register.aspx?OrgCode=10&EvtID=5928&AppCode=REG&CC=119070886266" class="vf-button vf-button--primary vf-button--sm ">Register now</a>
+            Application deadline: 26 Apr 2020
+          </p>
+
+          <p class="vf-intro__text">
+            Where: EMBL Heidelberg, Germany<br/>
+            When: 19 - 24 Jul 2020<br/>
+
+            <img src="//embl.de/layout/images/cco/02_organisers/organiser_EMBO_Course_2017.jpg" alt="organiser_EMBO_Course_2017">
+          </p>
+
+          <section class="vf-grid ">
+            <div>
+            </div>
+
+          </section>
+        </div>
+
+
+      </section>
+
+      <section class="vf-grid vf-grid__col-3">
+        <section class="vf-content vf-grid__col--span-2">
+          <h2>Course Overview</h2>
+          <p>One of the core objectives will be knowledge translation and mobilization. The principal themes include
+            methods in field geobiology, integrating geochemical and biological data, interpretation across scales,
+            nucleic acid extraction from rock samples, differences in resolution between field and laboratory data sets,
+            and the importance of geobiology to astrobiology and origin of life studies. Participants will have the
+            opportunity to conduct field research at the Ries impact structure to put into practice lessons learned
+            regarding geobiology field work. This field excursion is a geobiological field trip to an impact structure and
+            will be led by internationally renowned experts in impact cratering. Participants will come away with the
+            ability to plan and conduct molecular biology research in rock-hosted microbial systems.</p>
+          <h2>Audience</h2>
+          <p><strong></strong>The course is aimed at PhD students, and post-doctoral
+            researchers who are entering the field.</p>
+          <h2>Modules/resources</h2>
+          <ul>
+            <li>Introduction to geobiology field research with a field excursion to the Ries impact structure. Sample
+              collection for laboratory practicals as well as collection of in situ sequencing and geochemical data.</li>
+            <li>Geobiology. Rock-associated microbial communities, the role of geobiology in the origin and evolution of
+              life, geobiological biosignatures and the interplay between geochemistry and microbial metabolism.
+              Practicals will include extraction of nucleic acid from rock samples collected during the field excursion.
+            </li>
+            <li>Using sequence data in geobiology/ practical library preparation and analysis of sequencing results.
+              Different sequencing methods, comparison of data sets for laboratory based 16S amplicon sequencing and
+              complete 16S field-based sequencing techniques.</li>
+            <li>The role of Geochemistry and mineralogy in geobiology. Introduction to geochemistry and mineralogy,
+              different techniques and datasets used to assess potential microbial communities and metabolic
+              potential.&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</li>
+          </ul>
+
+          <h2>Learning Outcomes</h2>
+          <p>Successful participants of this practical course will be able to:</p>
+          <ul>
+            <li>Design a fieldwork plan for successful execution of sample collection for both molecular biology and
+              geochemical downstream analyses</li>
+            <li>Implement a DNA extraction strategy appropriate for geological samples</li>
+            <li>Recognise the importance of choosing an appropriate sequencing strategy based on geochemical/geobiological
+              considerations</li>
+            <li>Recognise the importance of scalar integration and the requirements for multi-analytical techniques in
+              geobiology</li>
+            <li>Discuss the biological significance of meteorite impact events</li>
+            <li>Describe the relationship between microorganisms and their abiotic substrates and differentiate between
+              active and passive attachment</li>
+            <li>Formulate hypothesis regarding the microbial community structure in a given geological environment</li>
+          </ul>
+
+        </section>
+
+        <div>
+          <a href="#" class="vf-card vf-card--topic">
+            <img src="https://www.embl.de/layout/images/cco/01_event-news-banners/GEO18-01_report.jpg" alt="" class="vf-card__image">
+            <div class="vf-card__content">
+              <h3 class="vf-card__title">
+                EVENT REPORT
+              </h3>
+              <p class="vf-card__text">
+                Check out what happened last time this event took place!
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </section>
+
+      <section class="vf-grid">
+        <div>
+          <hr class="vf-divider" />
+          <h2 class="vf-text vf-text-heading--2">What you need to know</h2>
+
+          <ul class="vf-list vf-list--ordered | vf-text--body vf-text-body--2">
+            <li class="vf-list__item">
+              <a href="https://www.embl.de/training/events/2020/GEO20-01/speakers_organisers_gallery/index.html">Speakers, Trainers and Organisers</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Programme</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Registration Fees and Motivation Letter</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Accommodation and Shuttles</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Sponsors</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Financial Assistance</a>
+            </li>
+            <li class="vf-list__item">
+              <a href="ht#">Contact</a>
+            </li>
+          </ul>
+          <hr class="vf-divider" />
+        </div>
+      </section>
+
+
+      <div class="vf-grid">
+        <section class="vf-content">
+
+          <span>EMBL Courses and Conferences are kindly supported by our<span>
+          <h2> <a
+              href="http://www.embl.de/aboutus/support-embl/corporate-partnership-programme/index.html">Corporate
+              Partnership Programme</a></h2>
+
+          <h3>Founder partners</h3>
+          <ul class="vf-list vf-grid vf-grid__col-6">
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/leica-logo.jpg" alt="Leica logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/olympus-logo.jpg" alt="Olympus logo"></li>
+          </ul>
+          <h3>Corporate partners</h3>
+          <ul class="vf-list vf-grid vf-grid__col-6">
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/10x-Genomics_120x82.jpg" alt="10x Genomics_120x82">
+            </li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/bd-logo.jpg" alt="Becton Dickinson logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/Bio-Rad.jpg" alt="Bio-Rad"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/boehringer-ingelheim-logo.jpg"
+                alt="Boehringer Ingelheim logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/eppendorf-logo.jpg" alt="Eppendorf logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/gsk-logo.jpg" alt="GSK logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/Milteniy-Biotec_logo120.jpg"
+                alt="Milteniy Biotec_logo120"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/Sartorius.jpg" alt="Sartorius"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/thermofisher-logo.jpg" alt="ThermoFisher logo">
+            </li>
+          </ul>
+          <h3>Associate partners</h3>
+          <ul class="vf-list vf-grid vf-grid__col-6">
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/merck-logo.jpg" alt="Merck logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/NEB_logo_120.jpg" alt="NEB_logo_120"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/nikon-logo.jpg" alt="Nikon logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/Promega_logo.jpg" alt="Promega logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/Roche_logo.jpg" alt="Roche logo"></li>
+            <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/sanofi-logo.jpg" alt="Sanofi logo"></li>
+          </ul>
+        </section>
       </div>
-  </div>		
-</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 ef-middle-column">
+        [[ef_main_progress]]
+        <h1>[[ef_main_header]]</h1>
+        [[ef_main_content]]
+        [[ef_main_buttons]]
+      </div>
+    </div>
+  </div>
 
 
 
-<div class="container ef-template-container footer">
-<div class="row">
-		<div class="col-sm-12 ef-footer">
-			[[ef_footer]]
-			[[ef_logo]]
-		</div>
-	</div>
-</div>
+  <div class="container ef-template-container footer">
+    <div class="row">
+      <div class="col-sm-12 ef-footer">
+        [[ef_footer]]
+        [[ef_logo]]
+      </div>
+    </div>
+  </div>
+
+  <!-- embl global footer -->
+  <link rel="import"
+    href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=569&pattern=node-body&source=contenthub"
+    data-target="self" data-embl-js-content-hub-loader>
+
+  <!-- embl data protection banner -->
+  <link rel="import"
+    href="https://dev.beta.embl.org/api/v1/pattern.html?filter-content-type=article&filter-id=581&pattern=node-body&source=contenthub"
+    data-target="self" data-embl-js-content-hub-loader>
+
+
+  <script src="https://dev.assets.emblstatic.net/embl-design-system/develop/scripts/scripts.js"></script>
+
 </body>
