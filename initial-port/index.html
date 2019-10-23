@@ -27,28 +27,16 @@
   <meta name="theme-color" content="#ffffff">
 
   <!-- Content descriptors -->
-  <meta name="embl:who" content="Group Jane"> <!-- the people, groups and teams involved -->
-  <meta name="embl:where" content="Barcelona"> <!-- at which EMBL sites the content applies -->
-  <meta name="embl:what" content="research"> <!-- the activities covered -->
+  <!-- These power the breadcumbs, though at the moment they don't fully work for this page -->
+  <meta name="embl:who" content="Courses and Conferences"> <!-- the people, groups and teams involved -->
+  <meta name="embl:where" content="Heidelberg"> <!-- at which EMBL sites the content applies -->
+  <meta name="embl:what" content="events"> <!-- the activities covered -->
   <meta name="embl:active" content="what"> <!-- which of the who/what/where is active -->
-
-  <!-- Content role -->
-  <meta name="embl:utility" content="-8"> <!-- if content is task and work based or if is meant to inspire -->
-  <meta name="embl:reach" content="-5">
-  <!-- if content is externally (public) or internally focused (those that work at EMBL) -->
-
-  <!-- Page infromation -->
-  <meta name="embl:maintainer" content=""> <!-- the contact person or group responsible for the page -->
-  <meta name="embl:last-review" content="NaN"> <!-- the last time the page was reviewed or updated -->
-  <meta name="embl:review-cycle" content=""> <!-- how long in days before the page should be checked -->
-  <meta name="embl:expiry" content=""> <!-- if there is a fixed point in time when the page is no longer relevant -->
-
 
   <!-- CSS and JS -->
   <link href="style.css" rel="stylesheet">
   <link rel="stylesheet" media="all"
     href="https://dev.assets.emblstatic.net/embl-design-system/develop/css/styles.css" />
-
 </head>
 
 <body>
@@ -58,14 +46,21 @@
     data-target="self" data-embl-js-content-hub-loader>
 
 
+  <!-- Begin Eventsforce standard containers -->
   <div class="container ef-template-container">
     <div class="jumbotron ef-banner">
+      <!-- Typically there is a wide-format image like this -->
       <img src="https://www.embl.de/training/events/2020/GEO20-01/section_header.jpg" style="max-width: 100%" alt="Decorative image" />
     </div>
     <div class="jumbotron ef-banner">
       [[ef_secondary_banner]]
     </div>
     <div class="vf-body">
+
+      <!-- Breadcrumb placeholder -->
+      <nav class="vf-breadcrumbs embl-breadcrumbs-lookup" aria-label="Breadcrumb" data-embl-js-breadcrumbs-lookup>
+        <div class="vf-list vf-list--inline | vf-breadcrumbs__list | embl-breadcrumbs-lookup--ghosting"></div>
+      </nav>
 
       <section class="vf-intro | embl-grid embl-grid--has-centered-content">
         <div>
@@ -147,6 +142,7 @@
         </section>
 
         <div>
+          <!-- Most events will have one or more of these "promos" -->
           <a href="#" class="vf-card vf-card--topic">
             <img src="https://www.embl.de/layout/images/cco/01_event-news-banners/GEO18-01_report.jpg" alt="" class="vf-card__image">
             <div class="vf-card__content">
@@ -165,6 +161,7 @@
       <section class="vf-grid">
         <div>
           <hr class="vf-divider" />
+          <!-- Navigation to sup-pages for the event -->
           <h2 class="vf-text vf-text-heading--2">What you need to know</h2>
 
           <ul class="vf-list vf-list--ordered | vf-text--body vf-text-body--2">
@@ -198,17 +195,19 @@
       <div class="vf-grid">
         <section class="vf-content">
 
-          <span>EMBL Courses and Conferences are kindly supported by our<span>
-          <h2> <a
+          <!-- Sponsores will likely show at the bottom of each page for the event -->
+          <h2 class="vf-text vf-text-heading--2">Sponsors </h2>
+          <p>EMBL Courses and Conferences are kindly supported by our <a
               href="http://www.embl.de/aboutus/support-embl/corporate-partnership-programme/index.html">Corporate
-              Partnership Programme</a></h2>
+              Partnership Programme</a>.<p>
 
-          <h3>Founder partners</h3>
+          <span class="vf-badge">Founder partners</span>
           <ul class="vf-list vf-grid vf-grid__col-6">
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/leica-logo.jpg" alt="Leica logo"></li>
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/olympus-logo.jpg" alt="Olympus logo"></li>
           </ul>
-          <h3>Corporate partners</h3>
+
+          <span class="vf-badge">Corporate partners</span>
           <ul class="vf-list vf-grid vf-grid__col-6">
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/10x-Genomics_120x82.jpg" alt="10x Genomics_120x82">
             </li>
@@ -224,7 +223,8 @@
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/thermofisher-logo.jpg" alt="ThermoFisher logo">
             </li>
           </ul>
-          <h3>Associate partners</h3>
+
+          <span class="vf-badge">Associate partners</span>
           <ul class="vf-list vf-grid vf-grid__col-6">
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/merck-logo.jpg" alt="Merck logo"></li>
             <li class="vf-list__item"><img src="//embl.de/layout/images/cco/3rd_column_text/cpp-logos/NEB_logo_120.jpg" alt="NEB_logo_120"></li>
@@ -237,6 +237,7 @@
       </div>
     </div>
     <div class="row">
+      <!-- I'm not quite sure what these are for, but I've left them on -->
       <div class="col-sm-12 ef-middle-column">
         [[ef_main_progress]]
         <h1>[[ef_main_header]]</h1>
